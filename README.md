@@ -1,6 +1,6 @@
 # Gowash
 
-A simple Go-based web application for booking time slots, designed for car wash services or similar appointment-based businesses.
+A simple Go-based web application for booking time slots, designed for wash services or similar appointment-based businesses.
 
 ## Features
 
