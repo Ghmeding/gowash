@@ -5,7 +5,7 @@ import (
 )
 
 func (s *Service) CreateBooking(userId string, slotId string) (string, error) {
-	_, err := s.repo.GetUserById(userId)
+	_, err := s.repo.GetUserByID(userId)
 	if err != nil {
 		return "", fmt.Errorf("user with user ID: %d not found", userId)
 	}
@@ -20,6 +20,6 @@ func (s *Service) CreateBooking(userId string, slotId string) (string, error) {
 		return "", fmt.Errorf("slot is already booked")
 	}
 
-	id, err = s.repo.CreateBooking(userId, slotId)
+	id, err := s.repo.CreateBooking(userId, slotId)
 	return id, nil
 }
